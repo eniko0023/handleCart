@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Édességek Áruháza</h1>
+        <p>Fedezd fel kínálatunkat és élvezd a finom édességeket!</p>
+    </header>
+
+    <section class="search">
+        <h2>Keresés ár alapján</h2>
+        <div class="price-filter">
+            <label for="min-price">Min ár: </label>
+            <input type="number" id="min-price" placeholder="Min ár">
+            <label for="max-price">Max ár: </label>
+            <input type="number" id="max-price" placeholder="Max ár">
+            <button id="filter-btn">Szűrés</button>
+        </div>
+    </section>
+
+    <main>
+        <h2>Termékeink</h2>
+        <div id="product-list"></div>
+        <section class="products">
+                <!-- Itt lesznek dinamikusan megjelenítve a termékek kártyái 
+                <div class="product-card">
+                    <img src="img/choco_bliss.jpg" alt="Csokoládé Fantázia">
+                    <h3>Csokoládé Fantázia</h3>
+                    <p>Édes és krémes tejcsokoládé, tökéletes ajándék!</p>
+                    <p>Ár: 1500 Ft</p>
+                    <button class="add-to-cart-btn">Kosárba</button>
+                </div>
+                -->
+        </section>
+    </main>
+
+    <section class="cart">
+        <h2>Kosár</h2>
+        <ul id="cart-list">          
+            <!-- Kosár tartalma dinamikusan jelenik meg -->
+        </ul>
+        <div class="cart-summary">
+            <p>Termékek száma: <span id="total-items">0</span></p>
+            <p>Összesen: <span id="total-price">0</span> Ft</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Készítette: HP</p>
+    </footer>
+</body>
+</html>
